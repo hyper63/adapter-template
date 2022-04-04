@@ -1,6 +1,6 @@
-import { assert, validateDataAdapterSchema } from "../dev_deps.js";
+import { assert, validateDataAdapterSchema } from "./dev_deps.js";
 
-import adapterBuilder from "../adapter.js";
+import adapterBuilder from "./adapter.js";
 
 const adapter = adapterBuilder();
 

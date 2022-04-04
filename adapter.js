@@ -1,7 +1,6 @@
 // deno-lint-ignore-file no-unused-vars
 
 /**
- *
  * @typedef {Object} CreateDocumentArgs
  * @property {string} db
  * @property {string} id
@@ -86,7 +85,6 @@ export default function (_env) {
   async function queryDocuments({ db, query }) {}
 
   /**
-   *
    * @param {IndexDocumentArgs}
    * @returns {Promise<Response>}
    */
@@ -94,7 +92,6 @@ export default function (_env) {
   async function indexDocuments({ db, name, fields }) {}
 
   /**
-   *
    * @param {ListDocumentArgs}
    * @returns {Promise<Response>}
    */
@@ -103,7 +100,6 @@ export default function (_env) {
   ) {}
 
   /**
-   *
    * @param {BulkDocumentsArgs}
    * @returns {Promise<Response>}
    */
