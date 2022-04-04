@@ -2,17 +2,16 @@ name: Test
 
 on:
   push:
-    branches: '*'
-    tags-ignore: '*'
-
+    branches: "**"
+    tags-ignore: "*"
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        deno-version: [1.11.x]
+        deno-version: [1.x]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Deno ${{ matrix.deno-version }}
         uses: denoland/setup-deno@v1
         with:
